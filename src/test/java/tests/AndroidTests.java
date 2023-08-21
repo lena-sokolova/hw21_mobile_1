@@ -46,7 +46,7 @@ public class AndroidTests extends tests.TestBase {
         step("Click on the back button", () -> {
             $(id("org.wikipedia.alpha:id/view_wiki_error_button")).click();
         });
-        step("Check visibility of header logo", () ->{
+        step("Check visibility of header logo", () -> {
             $(id("org.wikipedia.alpha:id/single_fragment_toolbar_wordmark"))
                     .shouldBe(visible);
         });
