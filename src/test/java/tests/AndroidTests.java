@@ -2,6 +2,7 @@ package tests;
 
 import io.appium.java_client.AppiumBy;
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import static com.codeborne.selenide.CollectionCondition.sizeGreaterThan;
@@ -11,9 +12,10 @@ import static com.codeborne.selenide.Selenide.$$;
 import static io.appium.java_client.AppiumBy.id;
 import static io.qameta.allure.Allure.step;
 
-public class SearchTests extends tests.TestBase {
+public class AndroidTests extends tests.TestBase {
 
     @Test
+    @Tag("android")
     @DisplayName("Search test")
     void successfulSearchTest() {
         step("Type search", () -> {
@@ -27,6 +29,7 @@ public class SearchTests extends tests.TestBase {
     }
 
     @Test
+    @Tag("android")
     @DisplayName("Open article test")
     void successfulOpenArticleTest() {
         step("Type search", () -> {
